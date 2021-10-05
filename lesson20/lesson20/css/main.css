@@ -1,0 +1,140 @@
+header .carousel-item {
+    height: 90vh;
+    display: block;
+}
+
+header .carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+header .my-title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+}
+
+header .my-title div {
+    font-weight: 300;
+    color: #BDBDBD;
+}
+
+header .owl-nav {
+    position: absolute;
+    left: -52%;
+    top: 60%;
+}
+
+header .owl-prev, header .owl-next {
+    width: 53px;
+    height: 53px;
+    border: 1px solid black !important;
+}
+
+header .owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: red;
+}
+
+button:focus {
+    outline: none;
+}
+
+header .owl-next span, header .owl-prev span {
+    display: none;
+}
+
+header .owl-prev, header .owl-next {
+    background-image: url("../images/arrow-2-right-long.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+header .owl-next {
+    background-image: url("../images/arrow-2-right-long (1).svg") !important;
+
+}
+
+.section-one .title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: black;
+}
+
+.section-one .owl-prev span, .section-one .owl-next span {
+    display: none;
+}
+
+.section-one .owl-prev, .section-one .owl-next {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/Vector.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.section-one .owl-next {
+    background-image: url("../images/Vector (1).png") !important;
+}
+
+.section-one .owl-theme .owl-nav [class*='owl-']:hover{
+    background-color: transparent;
+}
+.section-one .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -88%;
+}
+.section-one .owl-dots{
+    position: absolute;
+    left: 49%;
+    top: -100%;
+}
+.section-one .owl-dots .owl-dot{
+    display: block;
+}
+.section-one .owl-dots .owl-dot span{
+    height: 10px;
+    transition: 0.5s linear;
+
+}
+.section-one .owl-dots .active span{
+    background: red !important;
+    height: 30px;
+}
+
+
+
+.card{
+    background-color: red;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 10px 10px 20px blue;
+}
+.section-one .owl-carousel{
+    height: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.owl-carousel .owl-stage-outer{
+    height: 400px;
+    width: 100%;
+}
+.section-one .owl-carousel .card{
+    height: 300px;
+}
+@media (max-width: 576px ) {
+    header .owl-nav {
+        /*justify-content: flex-end;*/
+        /*display: flex;*/
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .section-one .owl-nav{
+
+        top: -100%;
+    }
+}
